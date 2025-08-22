@@ -12,19 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/idToolBarItens"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:navigationIcon="@drawable/baseline_arrow_back"
-            android:layout_height="wrap_content" />
+            app:title="Miniaturas" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.tabs.TabLayout
-        android:layout_below="@id/idAppBarItensMiniatura"
         android:id="@+id/idTabLayoutItensMiniatura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/idAppBarItensMiniatura"
         app:tabMode="fixed">
 
         <com.google.android.material.tabs.TabItem
