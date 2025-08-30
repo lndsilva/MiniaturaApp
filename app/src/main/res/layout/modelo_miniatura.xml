@@ -2,7 +2,10 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/idCardViewMiniatura"
     android:layout_width="match_parent"
-    android:layout_height="150dp">
+    android:layout_height="150dp"
+    android:clickable="true"
+    android:focusable="true">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,12 +19,12 @@
             android:src="#2c2c2c" />
 
         <TextView
-            android:layout_marginLeft="30sp"
             android:id="@+id/idTituloMiniatura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30sp"
             android:layout_toRightOf="@id/imgCardMiniatura"
             android:text="Titulo"
             android:textColor="#E91E63"
