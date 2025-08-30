@@ -27,16 +27,16 @@ public class MiniaturasFragment extends Fragment {
 
         lstMiniatura = new ArrayList<>();
         lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
-        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
-        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
-        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
-        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
-        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
-        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
+        lstMiniatura.add(new Miniatura(R.drawable.capitao, "Capitão"));
+        lstMiniatura.add(new Miniatura(R.drawable.ciclope, "Ciclope"));
+        lstMiniatura.add(new Miniatura(R.drawable.homem_ferro, "Homem de Ferro"));
+        lstMiniatura.add(new Miniatura(R.drawable.firestorm, "Firestorm"));
+        lstMiniatura.add(new Miniatura(R.drawable.lanterna, "Lanterna Verde"));
+        lstMiniatura.add(new Miniatura(R.drawable.superman, "Superman"));
 
         AdaptadorMiniatura adaptadorMiniatura = new AdaptadorMiniatura(getContext(),lstMiniatura);
 
-        idRecyclerViewMiniatura.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,true));
+        idRecyclerViewMiniatura.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false));
 
         idRecyclerViewMiniatura.setAdapter(adaptadorMiniatura);
 
