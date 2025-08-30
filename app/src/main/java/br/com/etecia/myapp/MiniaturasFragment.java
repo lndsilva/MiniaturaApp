@@ -3,6 +3,7 @@ package br.com.etecia.myapp;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -32,6 +33,12 @@ public class MiniaturasFragment extends Fragment {
         lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
         lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
         lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
+
+        AdaptadorMiniatura adaptadorMiniatura = new AdaptadorMiniatura(getContext(),lstMiniatura);
+
+        idRecyclerViewMiniatura.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,true));
+
+        idRecyclerViewMiniatura.setAdapter(adaptadorMiniatura);
 
         return view;
     }
