@@ -20,14 +20,18 @@ public class MiniaturasFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.fragment_miniaturas, container, false);
+        View view = inflater.inflate(R.layout.fragment_miniaturas, container, false);
 
         idRecyclerViewMiniatura = view.findViewById(R.id.idRecyclerViewMiniatura);
 
-lstMiniatura = new ArrayList<>();
-lstMiniatura.add(
-        new Miniatura()
-);
+        lstMiniatura = new ArrayList<>();
+        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
+        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
+        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
+        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
+        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
+        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
+        lstMiniatura.add(new Miniatura(R.drawable.atom, "Atom"));
 
         return view;
     }
