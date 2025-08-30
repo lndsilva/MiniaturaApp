@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -21,7 +22,12 @@ public class MiniaturasFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_miniaturas, container, false);
 
-        //você vai codificar a partir daqui.
+        idRecyclerViewMiniatura = view.findViewById(R.id.idRecyclerViewMiniatura);
+
+lstMiniatura = new ArrayList<>();
+lstMiniatura.add(
+        new Miniatura()
+);
 
         return view;
     }
